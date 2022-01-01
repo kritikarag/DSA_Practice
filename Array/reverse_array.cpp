@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<iostream>
+using namespace std;
 //Iterative Approach
 void ReverseArrayIteration(int arr[], int start, int end){
     int temp;
@@ -24,24 +24,24 @@ void ReverseArrayRecursion(int arr[],int start, int end){
 
 void PrintArray(int arr[],int n){
     for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+        cout<<arr[i]<<" ";
     }
 }
 
 int main(){
-    printf("Enter the size of array: ");
+    cout<<"Enter the size of array: ";
     int n;
-    scanf("%d",&n);
+    cin>>n;
     int arr[n];
-    printf("Enter the elements of array: ");
+    cout<<"Enter the elements of array: ";
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+        cin>>arr[i];
     }
     ReverseArrayIteration(arr,0,n-1);
-    printf("Reversed Array: ");
+    cout<<"Reversed Array: ";
     PrintArray(arr,n);
     
     ReverseArrayRecursion(arr,0,n-1);
-    printf("Reversed Array: ");
+    cout<<"Reversed Array: ";
     PrintArray(arr,n);
 }
