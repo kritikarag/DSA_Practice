@@ -35,7 +35,7 @@ int main(){
     int arr[n];
     cout<<"Enter the elements of array: ";
     for(int i=0;i<n;i++){
-        cin>>arr[i];
+         cin>>arr[i];
     }
     ReverseArrayIteration(arr,0,n-1);
     cout<<"Reversed Array: ";
