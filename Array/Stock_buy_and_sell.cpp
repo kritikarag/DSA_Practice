@@ -17,5 +17,5 @@ int main(){
             if(value>max)max = value;
         }
     }
-    cout<<"Maximum possible profit is: "<<max;
+    cout<<"Maximum possible profit is: "<<max<<endl;
 }
